@@ -83,7 +83,7 @@ const items = [
         img: "./images/img_12.jpg",
         rating: 4.8,
     },
-]
+];
 
 const cardTemplate = document.querySelector('#item-template');
 const shopItemsContainer = document.querySelector('.shop-items');
@@ -107,7 +107,7 @@ function makeCard(item) {
     }
 
     return cardItem;
-}
+};
 
 let currentState = [...items];
 
@@ -122,7 +122,7 @@ function renderItems(array) {
     if (!array.length) {
         nothingFound.textContent = "Ничего не найдено";
     }
-}
+};
 
 renderItems(currentState);
 
@@ -180,6 +180,6 @@ function searchItems() {
     renderItems(currentState);
 };
 
-searchInput.addEventListener("search", searchItems)
+searchInput.addEventListener("search", searchItems);
 
 button.addEventListener("click", searchItems);
