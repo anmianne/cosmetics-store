@@ -1,0 +1,151 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Source Serif 4", serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.menu__item {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+}
+.menu__item:hover {
+  color: #908c8a;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 28px;
+  text-decoration: none;
+  color: inherit;
+}
+.logo:hover {
+  color: #908c8a;
+}
+
+.search {
+  display: flex;
+}
+.search__input {
+  border: 1px solid #848482;
+  border-radius: 4px 0 0 4px;
+}
+.search__input:focus {
+  outline-color: #908c8a;
+  outline-style: solid;
+}
+.search__button {
+  background: #908c8a;
+  border: 2px solid #908c8a;
+  border-radius: 0 4px 4px 0;
+  border-left: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.nothing-found {
+  color: #323230;
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.shop-item {
+  width: calc(25% - 17px);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid;
+  position: relative;
+}
+.shop-item__content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+.shop-item__image {
+  width: 100%;
+  height: 350px;
+  flex-shrink: 3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shop-item__title {
+  font-size: 20px;
+  margin-top: 0;
+}
+.shop-item__text {
+  margin-top: 0;
+}
+.shop-item__price {
+  background-color: #c2bcb9;
+  padding: 4px 8px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-top: auto;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.rating i {
+  font-size: 18px;
+  color: #000;
+}
+
+.sort {
+  margin-bottom: 25px;
+  padding-left: 20px;
+}/*# sourceMappingURL=style.css.map */

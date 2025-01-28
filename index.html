@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49fb98affa.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин косметики "BEAUTY"</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li>
+                    <a href="#" class="logo">BEAUTY</a>
+                </li>
+                <li>
+                    <a href="#shop-items" class="menu__item">Каталог</a>
+                </li>
+                <li>
+                    <a href="#contacts" class="menu__item">Контакты</a>
+                </li>
+                <li>
+                    <div class="search">
+                        <input class="search__input" type="search">
+                        <button class="search__button" type="button"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="sort">
+        <label for="sort">Сортировка:</label>
+        <select name="sort" id="sort">
+            <option selected value="alphabet">По алфавиту</option>
+            <option value="expensive">Самые дорогие</option>
+            <option value="cheap">Самые дешевые</option>
+            <option value="rating">Рейтинг</option>
+        </select>
+    </div>
+    <main class="container">
+        <section class="shop-items">
+        </section>
+        <p class="nothing-found"></p>
+    </main>
+    <footer class="footer">
+        <a href="#" class="logo">BEAUTY</a>
+    </footer>
+    <template id="item-template">
+        <div class="shop-item">
+            <img class="shop-item__image" src="">
+            <div class="shop-item__content">
+                <h1 class="shop-item__title"></h1>
+                <p class="shop-item__text"></p>
+                <span class="shop-item__price"></span>
+            </div>
+            <div class="rating"></div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>

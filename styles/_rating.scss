@@ -1,0 +1,12 @@
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.rating i {
+    font-size: 18px;
+    color: #000;
+}

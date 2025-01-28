@@ -1,0 +1,9 @@
+.logo {
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: #908c8a;
+    }
+}

@@ -1,0 +1,18 @@
+.search {
+    display: flex;
+    &__input {
+        border: 1px solid #848482;
+        border-radius: 4px 0 0 4px;
+        &:focus {
+            outline-color: #908c8a;
+            outline-style: solid;
+          }
+      }
+      
+    &__button {
+        background: #908c8a;
+        border: 2px solid #908c8a;
+        border-radius: 0 4px 4px 0;
+        border-left: 0;
+      }
+  }
